@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "302544139938",
+    "project_id": "sffoodie-933bd",
+    "storage_bucket": "sffoodie-933bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302544139938:android:6c1a155f3e997e5977c9fb",
+        "android_client_info": {
+          "package_name": "com.sahilssoft.sffoodie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302544139938-edao16tac1vtcb4ui8p34a2b157uvsdg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAw8W1rIcXBBrUHyIqnOY99wKPZMr9iUyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302544139938-edao16tac1vtcb4ui8p34a2b157uvsdg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#85F6F3F3"
+    tools:context=".activities.WriteReviewActivity">
+
+    <!---Toolbar-->
+    <RelativeLayout
+        android:id="@+id/toolbarRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="10dp">
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@null"
+            android:src="@drawable/ic_white_back_ios_24" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Write Review"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileIV"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/toolbarRL"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_baseline_store_mall_directory_24"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/purple_500"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/shopNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileIV"
+        android:layout_centerHorizontal="true"
+        android:text="Shop Name"
+        android:textColor="@color/purple_500"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/labelTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shopNameTV"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:text="How was your experience with this seller? \nYour feedback is important to improve our quanlity of service"
+        android:textAlignment="center"/>
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelTV"
+        android:layout_marginTop="10dp"
+        android:numStars="5"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/reviewET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:background="@drawable/shape_rect02"
+        android:hint="Type Review ..."
+        android:minHeight="100dp"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:gravity="top"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/submitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="@color/purple_500"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_white_done"/>
+</RelativeLayout>
